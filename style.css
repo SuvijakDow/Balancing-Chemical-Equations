@@ -1,0 +1,316 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.top-header {
+    display: flex;
+    background-color: #71C8E2;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.logo-brand {
+    margin-left: 1rem;
+    height: 58px;
+}
+
+.brand-text {
+    margin-left: 0.25rem;
+    color: rgb(255, 255, 255);
+    font-family: "Iceberg", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+}
+
+.topic {
+    color: #324362;
+    font-family: 'Pridi', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1.5rem;
+}
+
+.molecule-input {
+    display: flex;
+    background-color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.reactant {
+    display: inline-block;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.product {
+    display: inline-block;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.left-input {
+    font-family: 'Pridi', serif;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    width: 75px;
+}
+
+.right-input {
+    font-family: 'Pridi', serif;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    width: 75px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uk-button {
+    display: flex;
+    margin: 10px;
+    height: 5rem;
+    width: 90%;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-button {
+    flex: 2;
+    font-family: 'Pridi', serif;
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #324362;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.left-button:hover {
+    background-color: white;
+    color: black;
+    border: 3px solid #324362;
+    border-radius: 30px;
+}
+
+
+.right-button {
+    flex: 2;
+    font-family: 'Pridi', serif;
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #324362;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.right-button:hover {
+    background-color: white;
+    color: black;
+    border: 3px solid #324362;
+    border-radius: 30px;
+}
+
+.reset-button {
+    flex: 0.5;
+    font-family: 'Pridi', serif;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid #DA4937;
+    background-color: white;
+    color: #DA4937;
+    transition-duration: 0.4s;
+}
+
+.reset-button:hover {
+    background-color: #DA4937;
+    color: white;
+}
+
+.solve-button {
+    flex: 3;
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg, rgba(218, 73, 55, 1) 0%, rgba(255, 223, 30, 1) 62%);
+    color: black;
+    transition-duration: 0.4s;
+}
+
+.solve-button:hover {
+    background-image: linear-gradient(90deg, rgba(255, 223, 30, 1) 0%, rgba(218, 73, 55, 1) 62%);
+    color: white;
+    box-shadow: 0 4px 10px rgba(165, 183, 25, 0.3);
+    border-radius: 30px;
+}
+
+.answer {
+    margin-top: 1rem;
+    text-align: center;
+    background-image: linear-gradient(90deg, rgba(50, 67, 98, 1) 0%, rgba(0, 0, 0, 1) 89%);
+    padding: 0.5rem;
+}
+
+.equation {
+    font-family: 'Kanit', sans-serif;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+.sample-container {
+    display: grid;
+    grid-template-rows: 80px 50px 50px;
+    grid-template-columns: 100px 400px;
+    gap: 10px;
+    margin: 1.5rem;
+    margin-top: 0;
+    padding-bottom: 1.5rem;
+}
+
+.sample-topic-div {
+    grid-column: span 2;
+}
+
+.sample-topic {
+    font-family: 'Pridi', serif;
+    font-size: 30px;
+}
+
+.sample-text-div {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.sample-text {
+    font-family: 'Pridi', serif;
+    font-size: 20px;
+    background-color: #71C8E2;
+    border-radius: 20px;
+    width: 100px;
+    text-align: center;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.sample-input-div,
+.sample-output-div {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.sample-input,
+.sample-output {
+    width: 100%;
+    border-radius: 15px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@media (max-width: 600px) {
+    .logo-brand {
+        height: 48px;
+    }
+    
+    .brand-text {
+        font-size: 16px;
+    }
+    
+    .uk-button {
+        display: flex;
+        margin: 10px;
+        height: 12rem;
+        width: 90%;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .topic {
+        font-size: 1.5rem;
+    }
+
+    .left-input {
+        font-size: 10px;
+        width: 45px;
+    }
+
+    .right-input {
+        font-size: 10px;
+        width: 45px;
+    }
+
+    .left-button {
+        font-size: 12px;
+        width: 80%;
+    }
+
+    .right-button {
+        font-size: 12px;
+        width: 80%;
+    }
+
+    .reset-button {
+        font-size: 12px;
+        width: 80%;
+    }
+
+    .solve-button {
+        font-size: 20px;
+        width: 80%;
+    }
+
+    .equation {
+        font-size: 0.65rem;
+    }
+
+    .sample-container {
+        grid-template-rows: 60px 35px 35px;
+        grid-template-columns: 1fr 4fr;
+        /* height: 190px; */
+        gap: 15px;
+        margin: 1rem;
+        margin-top: 0;
+        padding-bottom: 1.5rem;
+    }
+
+    .sample-topic {
+        font-size: 25px;
+    }
+
+    .sample-text {
+        font-size: 18px;
+        width: 70px;
+    }
+}
